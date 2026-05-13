@@ -6,8 +6,6 @@ online wealth management.
 Applications are handled conversationally via [Claude Code](https://claude.ai/code). 
 Please read the Data policy section for details.
 
-Prefer email? Send your CV to **jobs@truewealth.ch** — you will not be disadvantaged
-for choosing that route.
 
 ---
 
@@ -20,6 +18,10 @@ for choosing that route.
 
 > Applied investments at a Swiss fintech. One full day per week.
 
+---
+
+## How applying via Claude works
+
 **Prerequisites:** `git`, [Claude Code](https://claude.ai/code) installed and set up.
 
 ```bash
@@ -28,13 +30,12 @@ cd true-wealth-jobs
 claude --plugin-dir . "I want to apply for the Working Student – Asset Management role"
 ```
 
----
-
-## How it works
-
 1. You launch Claude with the application skills invoked.
 2. It walks you through a short application form collecting the necessary information.
 3. A short bash script is run to submit your application directly to True Wealth over HTTPS.
+
+Prefer email? Send your CV to **jobs@truewealth.ch** — you will not be disadvantaged
+for choosing that route.
 
 ## Privacy & Data Handling
 
