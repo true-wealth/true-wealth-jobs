@@ -4,7 +4,7 @@ Open positions at [True Wealth AG](https://www.truewealth.ch), a Swiss pioneer i
 online wealth management.
 
 Applications are handled conversationally via [Claude Code](https://claude.ai/code). 
-Please read the Data policy section for details.
+Please read the Privacy & Data Handling section for details.
 
 
 ---
@@ -24,15 +24,19 @@ Please read the Data policy section for details.
 
 **Prerequisites:** `git`, [Claude Code](https://claude.ai/code) installed and set up.
 
-```bash
-git clone https://github.com/true-wealth/true-wealth-jobs
-cd true-wealth-jobs
-claude --plugin-dir . "I want to apply for the Working Student – Asset Management role"
-```
+1. Download or `clone` this repository
+2. Open Claude Code in the downloaded directory
+3. Prompt it with "I want to apply to [POSITION AT ] True Wealth"
 
-1. You launch Claude with the application skills invoked.
-2. It walks you through a short application form collecting the necessary information.
-3. A short bash script is run to submit your application directly to True Wealth over HTTPS.
+> For example:
+> ```bash
+> git clone https://github.com/true-wealth/true-wealth-jobs
+> cd true-wealth-jobs
+> claude "I want to apply for the Working Student – Asset Management role at True Wealth"
+> ```
+
+4. Claude walks you through a short application form collecting the necessary information...
+5. ...and runs a short bash script to submit your application directly to True Wealth over HTTPS.
 
 Prefer email? Send your CV to **jobs@truewealth.ch** — you will not be disadvantaged
 for choosing that route.
@@ -68,5 +72,3 @@ Your application data is retained for 3 months after the position has been fille
 ### Your rights
 You have the right to access, correct, and delete your personal data, and to object to its processing. To exercise these rights, contact us at jobs@truewealth.ch.
 For full details on how True Wealth processes applicant data — including recipients, international data transfers, and your rights under the Swiss Federal Act on Data Protection (FADP / DSG) — please see our privacy policy: https://www.truewealth.ch/en/data-protection-declaration.
-
----
