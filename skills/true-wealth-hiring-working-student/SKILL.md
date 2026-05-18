@@ -154,7 +154,7 @@ Handle the response as follows:
 
 - If the user provides a URL, do a light sanity check: starts with `http`, 
   or with `github.com` or `linkedin.com`, is not a shortened URL, 
-  is not an overly long URL (>50 characters). If the check fails, gently ask 
+  is not an overly long URL (>100 characters). If the check fails, gently ask 
   them to change the input or type **skip**.
 - If the user says **skip**, says they'll send a CV by email, or otherwise
   declines, store an empty string. Do **not** pressure them.
