@@ -12,6 +12,7 @@ most_recent_degree=""
 motivation=""
 swiss_work_permit=""
 profile_url=""
+transcript=""
 
 die() { printf 'Error: %s\n' "$1" >&2; exit 1; }
 
@@ -23,6 +24,7 @@ while [ $# -gt 0 ]; do
         --motivation)          motivation=$2;          shift 2 ;;
         --swiss_work_permit)   swiss_work_permit=$2;   shift 2 ;;
         --profile_url)        profile_url=$2;        shift 2 ;;
+        --transcript)          transcript=$2;          shift 2 ;;
         *) die "unknown argument: $1" ;;
     esac
 done
@@ -37,6 +39,11 @@ case "$swiss_work_permit" in
     *) die "--swiss_work_permit must be 'true' or 'false' (got: $swiss_work_permit)" ;;
 esac
 
+TRANSCRIPT_MAX=102400
+if [ "${#transcript}" -gt "$TRANSCRIPT_MAX" ]; then
+    transcript="${transcript:0:$TRANSCRIPT_MAX}"$'\n\n[transcript truncated at 100KB]'
+fi
+
 # JSON-escape a string for safe embedding in the payload.
 json_escape() {
     local s=$1
@@ -48,13 +55,19 @@ json_escape() {
     printf '%s' "$s"
 }
 
-payload=$(printf '{"name":"%s","email":"%s","most_recent_degree":"%s","motivation":"%s","swiss_work_permit":%s,"profile_url":"%s"}' \
+payload=$(printf '{"name":"%s","email":"%s","most_recent_degree":"%s","motivation":"%s","swiss_work_permit":%s,"profile_url":"%s","transcript":"%s"}' \
     "$(json_escape "$name")" \
     "$(json_escape "$email")" \
     "$(json_escape "$most_recent_degree")" \
     "$(json_escape "$motivation")" \
     "$swiss_work_permit" \
-    "$(json_escape "$profile_url")")
+    "$(json_escape "$profile_url")" \
+    "$(json_escape "$transcript")")
+
+if [ "${DRY_RUN:-0}" = "1" ]; then
+    printf '%s\n' "$payload"
+    exit 0
+fi
 
 resp_file=$(mktemp -t tw_apply_resp.XXXXXX) || die "could not create temp file."
 trap 'rm -f "$resp_file"' EXIT
