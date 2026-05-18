@@ -38,8 +38,10 @@ or any affirmative):
 > this may include Anthropic's standard data usage policies (e.g., conversations
 > on free plans may be reviewed to improve models, while Pro and Team plans offer
 > additional privacy protections). Please review Anthropic's [Privacy Policy](https://www.anthropic.com/privacy)
-> if you have questions. Your application data will be submitted to
-> True Wealth's CRM platform at Attio over HTTPS, and will be hosted in the UK.
+> if you have questions. Your application data — the structured fields you
+> provide, and optionally a transcript of this conversation if you choose to
+> include it — will be submitted to True Wealth's CRM platform at Attio over
+> HTTPS, and will be hosted in the UK.
 > Don't want to use this tool? Apply by email at `jobs@truewealth.ch` — you
 > will not be disadvantaged for choosing that route.
 >
@@ -164,14 +166,52 @@ applicant.profile_url = "<url>" | ""
 
 ---
 
+## Step 5b — Optional conversation transcript
+
+Ask the user, in a warm tone, whether they would like to include a transcript
+of this conversation alongside the structured fields. Frame it as fully
+optional and explain the benefit briefly: it gives the recruiting team context
+the structured form alone cannot capture.
+
+Example phrasing:
+
+> "One last optional thing: would you like to include a transcript of our
+> conversation with your application? It can give the recruiting team a bit
+> more context than the form alone. Type **yes** to include it, or **no** to
+> skip."
+
+If the user agrees, compose the transcript yourself from this conversation's
+context:
+
+- Format as alternating `Claude:` / `Applicant:` blocks, in chronological
+  order.
+- Include the application Q&A only — not your internal reasoning, tool calls,
+  or the disclaimer recital.
+- **Redact sensitive content.** If the applicant volunteered health, religious
+  or political views, trade-union membership, biometric data, criminal-record
+  information, or third-party personal data without consent, replace the
+  affected lines with `[redacted — sensitive personal data]`. Do this
+  silently; do not re-prompt the user.
+- Keep the transcript under ~80 KB. If the conversation is longer, summarize
+  earlier portions and quote the later, more relevant exchanges verbatim.
+
+If the user declines, set the transcript to an empty string and proceed.
+
+Store:
+```
+applicant.transcript = "<text>" | ""
+```
+
+---
+
 ## Step 6 — Submit
 
 Once all fields are collected, submit via the Bash tool:
 
 - Run: `bash "${CLAUDE_PLUGIN_ROOT}/skills/true-wealth-hiring-working-student/submit.sh"`
 - Pass the collected values as arguments:
-  `--name "<name>" --email "<email>" --most_recent_degree "<degree string>" --motivation "<motivation>" --swiss_work_permit true|false --profile_url "<url or empty>"`
-- Always include all six flags. `--motivation` and `--profile_url` may be empty strings; the other four must be non-empty (the script enforces this).
+  `--name "<name>" --email "<email>" --most_recent_degree "<degree string>" --motivation "<motivation>" --swiss_work_permit true|false --profile_url "<url or empty>" --transcript "<transcript or empty>"`
+- Always include all seven flags. `--motivation`, `--profile_url`, and `--transcript` may be empty strings; the other four must be non-empty (the script enforces this).
 - `--swiss_work_permit` must be the literal `true` or `false`.
 
 Example:
@@ -183,7 +223,8 @@ bash "${CLAUDE_PLUGIN_ROOT}/skills/true-wealth-hiring-working-student/submit.sh"
   --most_recent_degree "University of Neuchatel, BSc in Finance, 3" \
   --motivation "Interested in wealth-tech and Swiss fintech." \
   --swiss_work_permit true \
-  --profile_url "https://www.linkedin.com/in/jane-doe"
+  --profile_url "https://www.linkedin.com/in/jane-doe" \
+  --transcript "Claude: Welcome! ...\nApplicant: Hi, ..."
 ```
 
 If the script exits non-zero, do **not** show the Step 7 confirmation — follow the Error handling section below instead.
