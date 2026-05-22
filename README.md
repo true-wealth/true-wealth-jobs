@@ -14,9 +14,7 @@ Please read the Privacy & Data Handling section for details.
 
 ## Open positions
 
-### [Working Student — Asset Management (20%)](skills/true-wealth-hiring-working-student/job_description.md)
-
-> Applied investments at a Swiss fintech. One full day per week.
+There are currently no open positions. Check back later or send your CV to **jobs@truewealth.ch**.
 
 ---
 
@@ -32,7 +30,7 @@ Please read the Privacy & Data Handling section for details.
 > ```bash
 > git clone https://github.com/true-wealth/true-wealth-jobs
 > cd true-wealth-jobs
-> claude "I want to apply for the Working Student – Asset Management role at True Wealth"
+> claude "I want to apply at True Wealth"
 > ```
 
 4. Claude walks you through a short application form collecting the necessary information...
