@@ -78,8 +78,11 @@ and wait for the user to acknowledge it (they may type "ok", "I agree", "yes",
 > True Wealth's CRM platform at Attio over HTTPS, and will be hosted in the UK.
 > Don't want to use this tool? Apply by email at `jobs@truewealth.ch` — you
 > will not be disadvantaged for choosing that route.
->
-> Type **"continue"** to proceed with your application.
+
+Then, **outside the quotation block** so it stands out as the call to action,
+display on its own line:
+
+Type **"continue"** to proceed with your application.
 
 Next, tell the user that their information will be sent to True Wealth and that
 applications interrupted half-way will not be sent.
