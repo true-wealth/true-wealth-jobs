@@ -14,8 +14,10 @@ from the terminal using Claude Code.
 3. Present the open positions as a numbered list and ask the user which one they are
    interested in.
 
-4. Once the user selects a position, follow the instructions in the corresponding
-   `skills/<dir>/SKILL.md` to run the application flow for that position.
+4. Once the user selects a position, follow the instructions in
+   `skills/apply/SKILL.md` — the generic application skill for all positions —
+   using the selected vacancy's `job_description.md` (and its `overrides.md`, if
+   one exists) as the position context.
 
 ## If no positions are found
 

@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
-# Submits a True Wealth job application (Digital Marketing Manager interim, VAC-04)
-# to the webhook defined in $WEBHOOK.
+# Submits a True Wealth job application to the webhook defined in $WEBHOOK.
+# Generic script for all vacancies — the position is passed via --position_code.
 # Runs anywhere bash + curl are available (Linux, macOS, Git Bash / WSL on Windows).
 
 set -u
 
 WEBHOOK="https://hooks.attio.com/w/aee3ff3a-463d-4856-b656-e378f340b657/72fc5059-d3ca-4dd1-9647-f7c861c57661"
-POSITION_CODE="VAC-04"
 # Attio Select option ID for "Applicant AI Chat" — fixed for this public flow.
 SOURCE_OPTION_ID="94f0bbec-c71c-4694-856e-4a42bc215a6c"
 
@@ -15,6 +14,7 @@ SOURCE_OPTION_ID="94f0bbec-c71c-4694-856e-4a42bc215a6c"
 MAX_PDF_BYTES=750000
 MAX_B64_BYTES=1000000
 
+position_code=""
 first_name=""
 last_name=""
 full_name=""
@@ -36,6 +36,7 @@ die() { printf 'Error: %s\n' "$1" >&2; exit 1; }
 
 while [ $# -gt 0 ]; do
     case "$1" in
+        --position_code)         position_code=$2;         shift 2 ;;
         --first_name)            first_name=$2;            shift 2 ;;
         --last_name)             last_name=$2;             shift 2 ;;
         --full_name)             full_name=$2;             shift 2 ;;
@@ -56,6 +57,7 @@ while [ $# -gt 0 ]; do
     esac
 done
 
+[ -n "$position_code" ]        || die "--position_code is required and must be non-empty."
 [ -n "$first_name" ]           || die "--first_name is required and must be non-empty."
 [ -n "$last_name" ]            || die "--last_name is required and must be non-empty."
 [ -n "$full_name" ]            || die "--full_name is required and must be non-empty."
@@ -67,6 +69,31 @@ done
 [ -n "$address_postal_code" ]  || die "--address_postal_code is required and must be non-empty."
 [ -n "$address_country" ]      || die "--address_country is required and must be non-empty."
 [ -n "$application_markdown" ] || die "--application_markdown is required and must be non-empty."
+
+case "$position_code" in
+    *[!A-Za-z0-9_-]*) die "--position_code may only contain letters, digits, '-' and '_' (got: $position_code)" ;;
+esac
+
+# The CRM rejects malformed emails asynchronously (after the webhook has already
+# returned 202), so catch the obvious cases here: local@domain.tld, TLD >= 2 letters.
+case "$email" in
+    *[[:space:]]*|*@*@*) die "--email is not a valid email address (got: $email)" ;;
+    ?*@?*.[A-Za-z][A-Za-z]*) ;;
+    *) die "--email is not a valid email address (got: $email)" ;;
+esac
+
+# The CRM requires phone numbers as '+' followed by digits only (E.164-style),
+# e.g. +41791234567 — no spaces, dashes, or parentheses.
+case "$phone" in
+    +*) phone_digits=${phone#+} ;;
+    *)  die "--phone must start with '+' (got: $phone)" ;;
+esac
+case "$phone_digits" in
+    ''|*[!0-9]*) die "--phone must be '+' followed by digits only, no spaces or separators (got: $phone)" ;;
+esac
+if [ "${#phone_digits}" -lt 7 ] || [ "${#phone_digits}" -gt 15 ]; then
+    die "--phone must contain 7-15 digits after the '+' (got: $phone)"
+fi
 
 case "$swiss_work_permit" in
     true|false) ;;
@@ -124,7 +151,7 @@ add_str email "$email"
 add_str phone "$phone"
 add_raw swiss_work_permit "$swiss_work_permit"
 if [ -n "$linkedin_url" ]; then add_str linkedin_url "$linkedin_url"; fi
-add_str position_code_applying_for "$POSITION_CODE"
+add_str position_code_applying_for "$position_code"
 add_str address_street "$address_street"
 add_str address_city "$address_city"
 add_str address_postal_code "$address_postal_code"
