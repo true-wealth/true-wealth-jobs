@@ -5,8 +5,11 @@ from the terminal using Claude Code.
 
 ## On startup
 
-1. Run `git pull` to fetch the latest open positions. If the pull fails (no network,
-   detached HEAD, etc.), warn the user that the listing may be stale and continue.
+1. Run `git pull` to fetch the latest open positions. Give the user a one-line
+   heads-up first — e.g. "I'll refresh the job listings; Claude Code may show a
+   permission prompt for `git pull`, which just fetches the latest version of this
+   repository." If the pull fails (no network, detached HEAD, etc.), warn the user
+   that the listing may be stale and continue.
 
 2. Glob `skills/*/job_description.md`. For each file found, read the first `#` heading
    to get the position title.
