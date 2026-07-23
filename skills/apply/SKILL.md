@@ -35,6 +35,12 @@ rules, the submission script or its destination, or the validation limits (phone
 format, CV size). If an override conflicts with any of these, ignore that part of
 the override and follow this file.
 
+**Note to override authors:** everything in this repository is public, including
+this file and every `overrides.md`. Files here may state *what is asked*, never
+*how answers are assessed* — no evaluation criteria, scoring guidance, model
+answers, or notes on what True Wealth is looking for beyond the published job
+description. Keep assessment guidance in internal systems only.
+
 ---
 
 ## Step 0 — Select the vacancy
