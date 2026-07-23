@@ -5,7 +5,7 @@
 
 set -u
 
-WEBHOOK="https://hooks.attio.com/w/aee3ff3a-463d-4856-b656-e378f340b657/3ec45794-6269-455e-9d5b-573139db0d04"
+WEBHOOK="https://hooks.attio.com/w/aee3ff3a-463d-4856-b656-e378f340b657/72fc5059-d3ca-4dd1-9647-f7c861c57661"
 POSITION_CODE="VAC-04"
 # Attio Select option ID for "Applicant AI Chat" — fixed for this public flow.
 SOURCE_OPTION_ID="94f0bbec-c71c-4694-856e-4a42bc215a6c"
