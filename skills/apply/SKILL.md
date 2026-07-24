@@ -23,7 +23,8 @@ started in).
 
 - `skills/<vacancy>/job_description.md` — defines the position. The first `#`
   heading is the position title; a **Position code** line (e.g. `VAC-04`) defines
-  the code submitted with the application.
+  the code submitted with the application. A recruiting manager optains the position 
+  code from HR/CEO.
 - `skills/<vacancy>/overrides.md` — **optional**. If present, read it after the
   job description. A recruiting manager may use it to adjust the screening
   interview (focus areas, specific questions, question count) or add
