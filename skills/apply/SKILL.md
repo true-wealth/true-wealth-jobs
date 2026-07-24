@@ -151,7 +151,10 @@ Handle the response:
   PDFs can be attached.
 - **LinkedIn URL:** store it for the `linkedin_url` field. Do not attempt to log
   in to LinkedIn or bypass any access wall; if the page isn't publicly fetchable,
-  just keep the URL and collect the rest conversationally.
+  just keep the URL and collect the rest conversationally. Either way, remember
+  the outcome — whether the profile could be fetched and read, or not (and
+  roughly why: auth-wall, no fetch tool available, timeout) — for the *Process
+  notes* section of the write-up.
 - **Skip:** fine — continue with Step 4 in full.
 
 If the candidate provides **both a CV and a LinkedIn URL** and the profile is
@@ -306,7 +309,9 @@ the section if none>
 
 ## Process notes
 <factual notes only: e.g. "CV attached as PDF", "candidate submitted early after
-question 3 of 5", "questions 2 and 4 skipped". Omit the section if empty.>
+question 3 of 5", "questions 2 and 4 skipped", "LinkedIn URL provided; profile
+fetched and used for prefill" / "LinkedIn URL provided; not fetchable
+(auth-wall)". Omit the section if empty.>
 ```
 
 **Show the full compiled document to the candidate**, apply any corrections they
