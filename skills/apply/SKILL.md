@@ -219,12 +219,21 @@ Honor both promises at all times: a skipped question is noted neutrally in the
 write-up and never pushed back on; "submit now" (or any clear equivalent) ends the
 interview immediately and jumps to Step 6 with whatever has been collected.
 
-### 5a — Current situation
+### 5a — Current situation and career timeline
 
 Ask whether the candidate is currently employed and in what role. If they are
 not, ask neutrally what they are doing at the moment — CVs and profiles are often
 not up to date, and the current situation matters more than the last printed
 entry. Never make the candidate feel that either answer is a problem.
+
+Then assemble a compact **career timeline**: one line per station with the
+approximate years, role, employer, and a few words on what the work actually was.
+If a CV or LinkedIn profile was provided in Step 3, build the draft from there
+and simply ask the candidate to confirm it is current and complete — do not make
+them dictate what you already have. Without a CV, collect it in **one** relaxed
+exchange ("Could you give me the quick tour of your career so far — rough years,
+roles, employers?"); approximate years are fine, and education can be a line in
+the same list where the candidate considers it part of their path.
 
 ### 5b — Candidate–job fit
 
@@ -268,6 +277,10 @@ embellish, or reinterpret content. Structure:
 
 ## Current situation
 <employment status and context from 5a>
+
+## Career timeline
+<one line per station, most recent first, as confirmed by the candidate:
+`YYYY–YYYY — role, employer — one line on the actual work`>
 
 ## Motivation
 <why this role / True Wealth>
