@@ -49,7 +49,8 @@ turn this into a permanent role.
 
 **Nice to have**
 - Experience in fintech or financial services.
-- Familiarity with marketing automation and CRM tooling.
+- Experience in content marketing and branding
+- Familiarity with marketing automation and AI tooling.
 - French.
 
 ---
