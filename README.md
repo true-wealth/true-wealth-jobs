@@ -19,6 +19,16 @@ Please read the Privacy & Data Handling section for details.
 > Keep our growth engine running while our Marketing Team Lead is on maternity
 > leave. Fixed term until end of May 2027, with a realistic option to go permanent.
 
+### [Product Owner (80–100%)](skills/true-wealth-hiring-product-owner/job_description.md)
+
+> Drive product initiatives from definition to release at a Swiss fintech —
+> reporting directly to the CEO.
+
+### [Software Engineer / Senior Software Engineer](skills/true-wealth-hiring-software-engineer/job_description.md)
+
+> Full stack on the systems that run the business — trading engine to delightful
+> UIs. Open to strong engineers at any stage.
+
 ---
 
 ## How applying via Claude works
