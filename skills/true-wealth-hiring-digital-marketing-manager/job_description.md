@@ -8,7 +8,7 @@ permanent contract afterwards — we are growing fast.
 majority of the week together in the office
 
 **True Wealth** is the Swiss pioneer in online wealth management, experiencing rapid growth.
-With over 40,000 clients entrusting us with their savings and investments, we are committed
+With over 50,000 clients entrusting us with their savings and investments, we are committed
 to making investing simpler, more transparent, and more accessible. Our mission is to deliver
 exceptional value by combining digitization with cost-efficiency, empowering our clients to
 take control of their financial future.
