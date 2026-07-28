@@ -1,7 +1,7 @@
 # Digital Marketing Manager (interim, 80–100%)
 
 **Position code:** VAC-04
-**Contract:** Fixed term until 31 May 2027 (maternity cover), with the option of a
+**Contract:** Fixed term until 30 April 2027 (maternity cover), with the option of a
 permanent contract afterwards — we are growing fast.
 **Workload:** 80–100%
 **Location:** Zürich Binz (two S-Bahn stops from Zürich HB); hybrid, with the
@@ -25,13 +25,12 @@ turn this into a permanent role.
 
 ## Your Responsibilities
 
-- Own our digital marketing channels end-to-end: paid search & paid social, SEO,
-  email/CRM, and content.
+- Own our digital marketing channels end-to-end: paid search & paid social, SEO and content.
 - Plan, execute, and continuously optimize campaigns to keep our growth momentum
   during the interim period.
 - Monitor performance and budgets against clearly defined KPIs such as
   CLTV-based ROAS; report results and insights to management.
-- Coordinate our content marketing production (social, blogs, video podcasts) and manage
+- Help coordinate our content marketing production (social, blogs, video podcasts) and manage
   the pipeline — the writing itself is covered by our in-house content specialists.
 - Collaborate closely with product, design, and engineering on landing pages,
   messaging, conversion optimization, and marketing automation.
@@ -51,7 +50,7 @@ turn this into a permanent role.
 - Basic branding comprehension — you apply and protect an established brand
   identity across all touchpoints rather than reinventing it.
 - Fluent German and English.
-- Available for the full interim period (until end of May 2027).
+- Available for the full interim period (until end of April 2027).
 
 **Nice to have**
 - Experience in fintech or financial services.
