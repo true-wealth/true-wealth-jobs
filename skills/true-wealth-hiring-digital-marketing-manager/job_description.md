@@ -1,7 +1,7 @@
 # Digital Marketing Manager (interim, 80–100%)
 
 **Position code:** VAC-04
-**Contract:** Fixed term until 30 April 2027 (maternity cover), with the option of a
+**Contract:** Fixed term until 31 May 2027 (maternity cover), with the option of a
 permanent contract afterwards — we are growing fast.
 **Workload:** 80–100%
 **Location:** Zürich Binz (two S-Bahn stops from Zürich HB); hybrid, with the
@@ -50,7 +50,7 @@ turn this into a permanent role.
 - Basic branding comprehension — you apply and protect an established brand
   identity across all touchpoints rather than reinventing it.
 - Fluent German and English.
-- Available for the full interim period (until end of April 2027).
+- Available for the full interim period (until end of May 2027).
 
 **Nice to have**
 - Experience in fintech or financial services.
