@@ -4,7 +4,12 @@
 # Runs anywhere bash + curl are available (Linux, macOS, Git Bash / WSL on Windows).
 
 set -u
+set -o pipefail
 
+# The webhook URL is public by design: candidates submit directly from their own
+# machines, so hiding it (env var, proxy) is not possible in this trust model —
+# it is the equivalent of a public jobs@ email address. Submissions are scanned
+# and triaged server-side, and the URL can be rotated centrally if abused.
 WEBHOOK="https://hooks.attio.com/w/aee3ff3a-463d-4856-b656-e378f340b657/72fc5059-d3ca-4dd1-9647-f7c861c57661"
 # Attio Select option ID for "Applicant AI Chat" — fixed for this public flow.
 SOURCE_OPTION_ID="94f0bbec-c71c-4694-856e-4a42bc215a6c"
@@ -107,12 +112,14 @@ if [ -n "$earliest_availability" ]; then
     esac
 fi
 
-is_number() { case "$1" in ''|*[!0-9.]*|*.*.*) return 1 ;; *) return 0 ;; esac; }
+# Whole CHF amounts only — digits, nothing else — so the value is always a
+# valid JSON number when inserted raw into the payload.
+is_number() { case "$1" in ''|*[!0-9]*) return 1 ;; *) return 0 ;; esac; }
 if [ -n "$desired_comp_min_chf" ]; then
-    is_number "$desired_comp_min_chf" || die "--desired_comp_min_chf must be a plain number (got: $desired_comp_min_chf)"
+    is_number "$desired_comp_min_chf" || die "--desired_comp_min_chf must be a whole number of CHF, digits only (got: $desired_comp_min_chf)"
 fi
 if [ -n "$desired_comp_max_chf" ]; then
-    is_number "$desired_comp_max_chf" || die "--desired_comp_max_chf must be a plain number (got: $desired_comp_max_chf)"
+    is_number "$desired_comp_max_chf" || die "--desired_comp_max_chf must be a whole number of CHF, digits only (got: $desired_comp_max_chf)"
 fi
 
 # Validate and base64-encode the CV, if one was provided.

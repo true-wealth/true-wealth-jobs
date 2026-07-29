@@ -23,7 +23,7 @@ started in).
 
 - `skills/<vacancy>/job_description.md` — defines the position. The first `#`
   heading is the position title; a **Position code** line (e.g. `VAC-04`) defines
-  the code submitted with the application. A recruiting manager optains the position 
+  the code submitted with the application. A recruiting manager obtains the position
   code from HR/CEO.
 - `skills/<vacancy>/overrides.md` — **optional**. If present, read it after the
   job description. A recruiting manager may use it to adjust the screening
@@ -203,7 +203,8 @@ message, conversationally:
 6. **Earliest availability** *(optional)* — convert to `YYYY-MM-DD` (first of the
    month if only a month is named) and confirm the converted date.
 7. **Desired compensation** *(optional)* — annual gross range in CHF, stored as
-   plain numbers; a single number is used for both bounds.
+   whole numbers (digits only, no decimals, apostrophes, or currency symbols); a
+   single number is used for both bounds.
 8. **LinkedIn URL** *(optional, if not given in Step 3)* — light sanity check:
    contains `linkedin.com`, not a shortened URL, not overly long (>80 chars).
 
