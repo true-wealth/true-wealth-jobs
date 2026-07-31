@@ -5,8 +5,11 @@ from the terminal using Claude Code.
 
 ## On startup
 
-1. Run `git pull` to fetch the latest open positions. If the pull fails (no network,
-   detached HEAD, etc.), warn the user that the listing may be stale and continue.
+1. Run `git pull` to fetch the latest open positions. Give the user a one-line
+   heads-up first — e.g. "I'll refresh the job listings; Claude Code may show a
+   permission prompt for `git pull`, which just fetches the latest version of this
+   repository." If the pull fails (no network, detached HEAD, etc.), warn the user
+   that the listing may be stale and continue.
 
 2. Glob `skills/*/job_description.md`. For each file found, read the first `#` heading
    to get the position title.
@@ -14,8 +17,10 @@ from the terminal using Claude Code.
 3. Present the open positions as a numbered list and ask the user which one they are
    interested in.
 
-4. Once the user selects a position, follow the instructions in the corresponding
-   `skills/<dir>/SKILL.md` to run the application flow for that position.
+4. Once the user selects a position, follow the instructions in
+   `skills/apply/SKILL.md` — the generic application skill for all positions —
+   using the selected vacancy's `job_description.md` (and its `overrides.md`, if
+   one exists) as the position context.
 
 ## If no positions are found
 

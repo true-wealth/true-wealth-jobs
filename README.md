@@ -14,7 +14,10 @@ Please read the Privacy & Data Handling section for details.
 
 ## Open positions
 
-There are currently no open positions. Check back later or send your CV to **jobs@truewealth.ch**.
+### [Digital Marketing Manager (interim, 80–100%)](skills/true-wealth-hiring-digital-marketing-manager/job_description.md)
+
+> Keep our growth engine running while our Marketing Team Lead is on maternity
+> leave. Fixed term until end of May 2027, with a realistic option to go permanent.
 
 ---
 
@@ -30,7 +33,7 @@ There are currently no open positions. Check back later or send your CV to **job
 > ```bash
 > git clone https://github.com/true-wealth/true-wealth-jobs
 > cd true-wealth-jobs
-> claude "I want to apply at True Wealth"
+> claude "I want to apply for the Digital Marketing Manager role at True Wealth"
 > ```
 
 4. Claude walks you through a short application form collecting the necessary information...
