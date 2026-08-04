@@ -95,7 +95,7 @@ Don't include third-party data without consent. Avoid mentioning identifiable co
 
 ### When you submit the summary
 
-Once you submit, True Wealth becomes the data controller for the data you send (the summary, and optionally the full conversation transcript if you choose to include it).
+Once you submit, True Wealth becomes the data controller for the data you send: the structured application fields, the application write-up you review and approve during the conversation, and your CV if you choose to attach one. The conversation itself is not transmitted — only the write-up you approved.
 
 The submitted data is stored in *Attio CRM* (hosted in the UK under a Data Processing Agreement with Standard Contractual Clauses in place) and in *BambooHR*, our applicant tracking system. It may be combined with information from our standard recruiting process (e.g. an LLM-assisted CV ranking via BambooHR — see our privacy policy for details).
 
