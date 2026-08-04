@@ -130,6 +130,10 @@ fi
 if [ -n "$desired_comp_max_chf" ]; then
     is_number "$desired_comp_max_chf" || die "--desired_comp_max_chf must be a whole number of CHF, digits only (got: $desired_comp_max_chf)"
 fi
+if [ -n "$desired_comp_min_chf" ] && [ -n "$desired_comp_max_chf" ] \
+    && [ "$desired_comp_min_chf" -gt "$desired_comp_max_chf" ]; then
+    die "--desired_comp_min_chf ($desired_comp_min_chf) must not exceed --desired_comp_max_chf ($desired_comp_max_chf)"
+fi
 
 # Validate and base64-encode the CV, if one was provided.
 resume_b64=""
