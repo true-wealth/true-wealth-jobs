@@ -1,7 +1,9 @@
 # True Wealth — Jobs Repo
 
 This repo lists open positions at True Wealth AG and lets candidates apply directly
-from the terminal using Claude Code.
+from Claude Code — either started inside this repository, or by asking Claude to
+clone it (in that case, treat the cloned repository folder as the root for every
+path below, and run all git and script commands in it).
 
 ## On startup
 
