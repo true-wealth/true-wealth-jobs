@@ -6,6 +6,17 @@ online wealth management.
 Applications are handled conversationally via [Claude Code](https://claude.ai/code). 
 Please read the Privacy & Data Handling section for details.
 
+> [!TIP]
+> **Fastest way to apply — no terminal or git knowledge needed.**
+> Open [Claude Code](https://claude.ai/code) (the desktop app is enough) and paste:
+>
+> ```
+> Please clone https://github.com/true-wealth/true-wealth-jobs, read the CLAUDE.md
+> file inside it, and follow its instructions to help me apply to True Wealth.
+> ```
+>
+> Claude does the rest — you just answer its questions in the chat.
+
 
 ---
 
