@@ -40,6 +40,9 @@ resume_pdf=""
 die() { printf 'Error: %s\n' "$1" >&2; exit 1; }
 
 while [ $# -gt 0 ]; do
+    # Every option takes a value; guard so a trailing flag produces a clear
+    # error instead of an unbound-variable crash under set -u.
+    [ $# -ge 2 ] || die "missing value for argument: $1"
     case "$1" in
         --position_code)         position_code=$2;         shift 2 ;;
         --first_name)            first_name=$2;            shift 2 ;;
@@ -80,12 +83,18 @@ case "$position_code" in
 esac
 
 # The CRM rejects malformed emails asynchronously (after the webhook has already
-# returned 202), so catch the obvious cases here: local@domain.tld, TLD >= 2 letters.
+# returned 202), so catch the obvious cases here: local@domain.tld with a purely
+# alphabetic TLD of at least two letters after the final dot.
 case "$email" in
     *[[:space:]]*|*@*@*) die "--email is not a valid email address (got: $email)" ;;
-    ?*@?*.[A-Za-z][A-Za-z]*) ;;
+    ?*@?*.?*) ;;
     *) die "--email is not a valid email address (got: $email)" ;;
 esac
+email_tld=${email##*.}
+case "$email_tld" in
+    ''|*[!A-Za-z]*) die "--email is not a valid email address (got: $email)" ;;
+esac
+[ "${#email_tld}" -ge 2 ] || die "--email is not a valid email address (got: $email)"
 
 # The CRM requires phone numbers as '+' followed by digits only (E.164-style),
 # e.g. +41791234567 — no spaces, dashes, or parentheses.
