@@ -33,21 +33,35 @@ Please read the Privacy & Data Handling section for details.
 
 ## How applying via Claude works
 
-**Prerequisites:** `git`, [Claude Code](https://claude.ai/code) installed and set up.
+**Prerequisite:** [Claude Code](https://claude.ai/code) — the desktop app is enough.
+You do **not** need to use a terminal or know git: Claude handles that part for you.
 
-1. Download or `clone` this repository
-2. Open Claude Code in the downloaded directory
-3. Prompt it with "I want to apply to [POSITION AT ] True Wealth"
+### The easy way — no command line needed
 
-> For example:
+1. Open Claude Code and start a new session in any folder (an empty one is ideal).
+2. Paste this prompt:
+
+   > Please clone https://github.com/true-wealth/true-wealth-jobs, read the
+   > CLAUDE.md file inside it, and follow its instructions to help me apply
+   > to True Wealth.
+
+3. Claude fetches the current openings and walks you through the application
+   right in the chat — you just answer its questions. Along the way, Claude Code
+   may ask you to approve individual steps (such as running `git` or the
+   submission script); that is its normal permission system, and each request
+   will be explained before it appears.
+
+### The terminal way — if you prefer to drive yourself
+
 > ```bash
 > git clone https://github.com/true-wealth/true-wealth-jobs
 > cd true-wealth-jobs
 > claude "I want to apply for the Digital Marketing Manager role at True Wealth"
 > ```
 
-4. Claude walks you through a short application form collecting the necessary information...
-5. ...and runs a short bash script to submit your application directly to True Wealth over HTTPS.
+Either way, Claude collects the necessary information conversationally and then
+runs a short script that submits your application directly to True Wealth over
+HTTPS.
 
 Prefer email? Send your CV to **jobs@truewealth.ch** — you will not be disadvantaged
 for choosing that route.
