@@ -188,6 +188,7 @@ trap 'rm -f "$resp_file"' EXIT
 # The payload can approach 1 MB with a CV attached, which is too large to pass
 # as an argv entry on some platforms — stream it to curl via stdin instead.
 http_code=$(printf '%s' "$payload" | curl -sS -o "$resp_file" -w '%{http_code}' \
+    --connect-timeout 15 --max-time 120 \
     -X POST "$WEBHOOK" \
     -H 'Content-Type: application/json' \
     --data-binary @-) || die "network error while submitting application."
