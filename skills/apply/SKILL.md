@@ -16,8 +16,9 @@ This skill runs the application flow for **any** True Wealth vacancy. It collect
 the required applicant data, runs a short screening interview tailored to the
 selected position, and submits everything to True Wealth.
 
-All paths below are relative to the repository root (the directory Claude Code was
-started in).
+All paths below are relative to the repository root — the directory Claude Code
+was started in, or, if the candidate had Claude clone the repository during the
+session, the folder it was cloned into.
 
 ## Per-vacancy files
 
