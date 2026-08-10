@@ -104,6 +104,7 @@ case "$phone" in
 esac
 case "$phone_digits" in
     ''|*[!0-9]*) die "--phone must be '+' followed by digits only, no spaces or separators (got: $phone)" ;;
+    0*) die "--phone cannot start with '+0' - no country code begins with 0 (got: $phone)" ;;
 esac
 if [ "${#phone_digits}" -lt 7 ] || [ "${#phone_digits}" -gt 15 ]; then
     die "--phone must contain 7-15 digits after the '+' (got: $phone)"
