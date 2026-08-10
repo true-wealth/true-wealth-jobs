@@ -69,7 +69,7 @@ contribute to reshaping how people in Switzerland approach investing. You will s
 well-oiled marketing setup with real budgets, real traction, and a team that wants
 you to succeed from day one. We work with flexible hours from a modern office in
 Zürich Binz, with room for home office alongside a mostly-in-office week. Our
-values: [truewealth.ch/en/our-values](https://www.truewealth.ch/en/our-values).
+values: [truewealth.ch/culture](https://www.truewealth.ch/culture).
 
 ---
 

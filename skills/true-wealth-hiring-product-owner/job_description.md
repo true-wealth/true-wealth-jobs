@@ -68,7 +68,7 @@ external stakeholders. The role reports to the CEO.
 - Dynamic, multi-national, and open company culture with enthusiastic,
   experienced colleagues from diverse fields.
 - Modern office in Zürich Binz, flexible working hours. Our values:
-  [truewealth.ch/en/our-values](https://www.truewealth.ch/en/our-values).
+  [truewealth.ch/culture](https://www.truewealth.ch/culture).
 
 ---
 

@@ -70,7 +70,7 @@ seasoned seniors. What matters most is judgment and craft, not tenure.
 - Highly motivated and experienced colleagues.
 - Choose your own hardware.
 - Flexible hybrid work policy. Our values:
-  [truewealth.ch/en/our-values](https://www.truewealth.ch/en/our-values).
+  [truewealth.ch/culture](https://www.truewealth.ch/culture).
 
 ---
 
