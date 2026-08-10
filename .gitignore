@@ -1,2 +1,5 @@
-.claude/
+# Local Claude Code state stays untracked, but the shared project settings
+# (permission allowlist for the application flow) ship with the repo.
+.claude/*
+!.claude/settings.json
 .vs/
