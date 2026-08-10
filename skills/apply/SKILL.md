@@ -217,6 +217,16 @@ message, conversationally:
      becomes `+4179…`).
    - Confirm the normalized number with the candidate before storing it. It must
      match `+` followed by 7–15 digits; `submit.sh` rejects anything else.
+   - **Plausibility-check the normalized number against the country's numbering
+     plan**, using your knowledge: does the country code exist, and do the
+     remaining digits have a plausible length and leading digit for that
+     country? (E.g. a Swiss number is `+41` plus 9 digits never starting with
+     0; after `+7`, numbers have 10 digits and never start with 0; Italian
+     numbers, by contrast, do keep their leading 0.) This applies equally to
+     numbers extracted from a CV or LinkedIn profile. If the number looks
+     implausible, don't argue — say what looks off and ask the candidate to
+     double-check, because the recruiting system rejects invalid numbers and
+     the application would fail to process.
 4. **Postal address** — street + number, postal code and city, country (suggest
    "Switzerland" as a likely default, but let them answer freely).
 5. **Swiss work permit** — "Do you currently hold a valid Swiss work permit?
