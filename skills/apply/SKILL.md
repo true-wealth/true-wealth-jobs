@@ -424,6 +424,17 @@ bash skills/apply/submit.sh \
 If the script exits non-zero, do **not** show the Step 8 confirmation — follow the
 Error handling section below instead.
 
+**If Claude Code itself blocks the script** — a permission denial rather than a
+script error (this can happen when the candidate's session runs in an automatic
+permission mode that restricts network commands) — do **not** treat it as a
+submission failure, and do **not** ask the candidate to run any command
+themselves. Instead, explain in one friendly sentence that their current
+permission mode is blocking the final submission step, and ask them to switch
+to the regular (manual-approval) permission mode — in the terminal, **Shift+Tab**
+cycles the modes; in the desktop app, use the permission-mode selector next to
+the message box — and to tell you when they're ready. Then run the exact same
+submission command again and approve-as-you-go takes care of the rest.
+
 ---
 
 ## Step 8 — Confirmation message
@@ -442,9 +453,15 @@ Display:
 - If the user abandons mid-flow (e.g., says "cancel", "quit", "stop"), acknowledge
   politely and do not submit any partial data. (Note the difference from
   **"submit now"**, which means: stop the interview and submit immediately.)
-- If `submit.sh` exits non-zero, treat it as a submission failure: show the
-  collected fields as a JSON code block so the user can forward them manually,
-  and point them to `jobs@truewealth.ch` (they can attach their CV there too).
+- Distinguish a **permission denial** (Claude Code refused to run the script)
+  from a **script failure** (the script ran and exited non-zero). For a
+  permission denial, follow the guidance in Step 7: suggest switching the
+  permission mode and retry — never ask the candidate to run commands
+  themselves, and never dump the collected data prematurely.
+- If `submit.sh` runs but exits non-zero, treat it as a submission failure: show
+  the collected fields as a JSON code block so the user can forward them
+  manually, and point them to `jobs@truewealth.ch` (they can attach their CV
+  there too).
 - In case of any error, mention that they can apply via any conventional channel,
   e.g. by sending a CV and cover letter to `jobs@truewealth.ch`.
 
