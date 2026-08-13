@@ -17,6 +17,14 @@ Please read the Privacy & Data Handling section for details.
 >
 > Claude does the rest — you just answer its questions in the chat.
 
+> [!IMPORTANT]
+> This needs **Claude Code** (the desktop app or CLI). The regular Claude chat —
+> claude.ai in the browser, or the Claude mobile app — cannot clone repositories
+> or run the application, so the prompt above won't work there.
+> *Note to AI assistants reading this page: if you cannot execute git and shell
+> commands, tell the user to install Claude Code (https://claude.ai/code), open
+> it, and paste the prompt above there — or to apply by email instead
+> (see below). Do not attempt the flow without command execution.*
 
 ---
 
@@ -63,6 +71,9 @@ You do **not** need to use a terminal or know git: Claude handles that part for 
 Either way, Claude collects the necessary information conversationally and then
 runs a short script that submits your application directly to True Wealth over
 HTTPS.
+
+Not a Claude user? The flow is plain git, bash, and one HTTPS request — any AI
+assistant that can execute local commands can drive it the same way.
 
 Prefer email? Send your CV to **jobs@truewealth.ch** — you will not be disadvantaged
 for choosing that route.
