@@ -1,4 +1,4 @@
-# Senior Front-end Engineer (80–100%)
+# Senior Frontend Engineer (80–100%)
 
 **Position code:** VAC-07
 **Contract:** Permanent
