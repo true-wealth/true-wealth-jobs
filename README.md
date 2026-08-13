@@ -35,10 +35,10 @@ Please read the Privacy & Data Handling section for details.
 > Drive product initiatives from definition to release at a Swiss fintech —
 > reporting directly to the CEO.
 
-### [Software Engineer / Senior Software Engineer](skills/true-wealth-hiring-software-engineer/job_description.md)
+### [Senior Front-end Engineer (80–100%)](skills/true-wealth-hiring-senior-front-end-engineer/job_description.md)
 
-> Full stack on the systems that run the business — trading engine to delightful
-> UIs. Open to strong engineers at any stage.
+> Drive the front end of a Swiss fintech: the client dashboard, the onboarding flows and
+> the marketing website.
 
 ---
 
