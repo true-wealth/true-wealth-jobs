@@ -15,7 +15,7 @@ efficiently as possible.
 
 To meet the rising popularity of our investment solution, ensure the high quality
 of our product, and continue innovating the way wealth management is done, you
-will take ownership in this important Product Owner role. You will translate our
+will take on this important Product Owner role. You will translate our
 product strategy — owned by the CEO and the product leadership team — into
 well-defined, shipped product initiatives, closely interacting with your Product
 Owner peer, developers, UX/UI designers, marketing and management, as well as

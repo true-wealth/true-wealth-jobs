@@ -25,7 +25,7 @@ Use these in place of generically derived ones where they fit:
 1. "Tell me about a product initiative you drove from first idea to release —
    what was the goal, what did you personally decide along the way, and what
    shipped in the end?"
-2. "Walk me through a time a prototype — ideally one you built yourself —
+2. "Walk me through a time when a prototype — ideally one you built yourself —
    settled a product question or got stakeholders aligned. What did you build,
    and what happened?"
 3. "How do AI tools show up in your product work today? Give me a concrete,
