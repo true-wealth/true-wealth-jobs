@@ -58,7 +58,6 @@ someone who works fully autonomously.
 - Business domain knowledge from finance, trading, portfolio management, or
   accounting.
 - German.
-- Based in or around Zürich.
 
 ---
 
