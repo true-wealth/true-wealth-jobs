@@ -73,11 +73,11 @@ language of the conversation so far** and wait for the user to acknowledge it
 in their language). Use the German, French, Italian, or Rumantsch Grischun
 version below when the conversation is in that language; **for any other
 language, default to the English version.** The only permitted adaptation: if
-the candidate has established formal address (Sie/vous/Lei), convert the
-German/Italian versions from informal to formal address — pronouns,
-possessives, and the verb forms this grammatically requires (e.g. "die du
-machst" → "die Sie machen", "dein Abo" → "Ihr Abo") — changing nothing in
-content or wording beyond that.
+the candidate has established formal address, convert the German or Italian
+version from informal to formal — pronouns, possessives, and the verb forms
+this grammatically requires (e.g. "die du machst" → "die Sie machen", "dein
+Abo" → "Ihr Abo") — changing nothing in content or wording beyond that. The
+French version is already in formal address and needs no adaptation.
 
 **English (default):**
 
