@@ -152,10 +152,10 @@ else.
 > [decleraziun da protecziun da datas](https://www.anthropic.com/privacy) dad
 > Anthropic. Tias datas da candidatura vegnan tramessas via HTTPS ad Attio, la
 > plattafurma CRM da True Wealth, ed ospitadas en il Reginavel Unì. Na vuls ti
-> betg duvrar quest utensil? Candidescha per e-mail a `jobs@truewealth.ch` —
+> betg duvrar questa applicaziun? Candidescha per e-mail a `jobs@truewealth.ch` —
 > ti n'has nagin dischavantatg da tscherner questa via.
 >
-> Tippa **«cuntinuar»** per cuntinuar cun tia candidatura.
+> Tippa **«cuntinuar»** per prosequir cun tia candidatura.
 
 Next, tell the user that their information will be sent to True Wealth and that
 applications interrupted half-way will not be sent.
