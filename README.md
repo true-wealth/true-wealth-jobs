@@ -83,7 +83,10 @@ runs a short script that submits your application directly to True Wealth over
 HTTPS.
 
 Not a Claude user? The flow is plain git, bash, and one HTTPS request — any AI
-assistant that can execute local commands can drive it the same way.
+assistant that can execute local commands can drive it the same way. Note that
+the privacy description below is written for Claude: if you use another
+assistant, your conversation is processed by that provider under its own terms
+instead of Anthropic's.
 
 Prefer email? Send your CV to **jobs@truewealth.ch** — you will not be disadvantaged
 for choosing that route.
