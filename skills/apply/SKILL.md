@@ -67,9 +67,17 @@ role as the interview context.
 
 ## Step 1 — Disclaimer
 
-Before collecting any personal data, display the following disclaimer **verbatim**
-and wait for the user to acknowledge it (they may type "ok", "I agree", "yes",
-"continue", or any affirmative):
+Before collecting any personal data, display the disclaimer **verbatim in the
+language of the conversation so far** and wait for the user to acknowledge it
+(any affirmative counts — "ok", "I agree", "yes", "continue", or the equivalent
+in their language). Use the German, French, Italian, or Rumantsch Grischun
+version below when the conversation is in that language; **for any other
+language, default to the English version.** The only permitted adaptation: if
+the candidate has established formal address (Sie/vous/Lei), adjust the
+informal pronouns in the German/Italian versions accordingly — change nothing
+else.
+
+**English (default):**
 
 > **Before we begin:** The information you enter in this conversation is processed
 > by Anthropic just like any other message you send. Depending on your Claude plan,
@@ -82,6 +90,72 @@ and wait for the user to acknowledge it (they may type "ok", "I agree", "yes",
 > will not be disadvantaged for choosing that route.
 >
 > Type **"continue"** to proceed with your application.
+
+**German (Swiss High German):**
+
+> **Bevor wir beginnen:** Die Angaben, die du in diesem Gespräch machst, werden
+> von Anthropic gleich verarbeitet wie jede andere Nachricht, die du sendest. Je
+> nach deinem Claude-Abo gelten dabei Anthropics übliche Richtlinien zur
+> Datennutzung (z. B. können Gespräche in Gratis-Abos zur Verbesserung der
+> Modelle ausgewertet werden, während Pro- und Team-Abos zusätzlichen
+> Datenschutz bieten). Bei Fragen lies bitte Anthropics
+> [Datenschutzerklärung](https://www.anthropic.com/privacy). Deine
+> Bewerbungsdaten werden über HTTPS an True Wealths CRM-Plattform Attio
+> übermittelt und im Vereinigten Königreich gehostet. Möchtest du dieses Tool
+> nicht verwenden? Bewirb dich per E-Mail an `jobs@truewealth.ch` — daraus
+> entsteht dir kein Nachteil.
+>
+> Tippe **«weiter»**, um mit deiner Bewerbung fortzufahren.
+
+**French:**
+
+> **Avant de commencer :** Les informations que vous saisissez dans cette
+> conversation sont traitées par Anthropic comme tout autre message que vous
+> envoyez. Selon votre abonnement Claude, les politiques standard d'utilisation
+> des données d'Anthropic peuvent s'appliquer (par exemple, les conversations
+> des offres gratuites peuvent être analysées pour améliorer les modèles, tandis
+> que les abonnements Pro et Team offrent des protections supplémentaires de la
+> vie privée). En cas de questions, veuillez consulter la
+> [politique de confidentialité](https://www.anthropic.com/privacy) d'Anthropic.
+> Vos données de candidature seront transmises via HTTPS à Attio, la plateforme
+> CRM de True Wealth, et hébergées au Royaume-Uni. Vous préférez ne pas utiliser
+> cet outil ? Postulez par e-mail à `jobs@truewealth.ch` — vous n'en serez
+> aucunement désavantagé.
+>
+> Tapez **« continuer »** pour poursuivre votre candidature.
+
+**Italian:**
+
+> **Prima di iniziare:** Le informazioni che inserisci in questa conversazione
+> vengono elaborate da Anthropic come qualsiasi altro messaggio che invii. A
+> seconda del tuo piano Claude si applicano le consuete politiche di utilizzo
+> dei dati di Anthropic (ad esempio, le conversazioni dei piani gratuiti possono
+> essere esaminate per migliorare i modelli, mentre i piani Pro e Team offrono
+> protezioni aggiuntive della privacy). In caso di domande, consulta
+> l'[informativa sulla privacy](https://www.anthropic.com/privacy) di Anthropic.
+> I dati della tua candidatura saranno trasmessi via HTTPS ad Attio, la
+> piattaforma CRM di True Wealth, e ospitati nel Regno Unito. Preferisci non
+> usare questo strumento? Candidati via e-mail a `jobs@truewealth.ch` — non ne
+> avrai alcuno svantaggio.
+>
+> Digita **«continua»** per proseguire con la tua candidatura.
+
+**Rumantsch Grischun:**
+
+> **Avant che nus cumenzain:** Las infurmaziuns che ti endatas en questa
+> conversaziun vegnan elavuradas dad Anthropic sco mintga auter messadi che ti
+> tramettas. Tut tenor tes abunament da Claude valan las directivas usitadas
+> dad Anthropic per l'utilisaziun da datas (per exempel pon conversaziuns dad
+> abunaments gratuits vegnir analisadas per meglierar ils models, entant che
+> abunaments Pro e Team porschan ina protecziun supplementara da datas). Sche
+> ti has dumondas, legia per plaschair la
+> [decleraziun da protecziun da datas](https://www.anthropic.com/privacy) dad
+> Anthropic. Tias datas da candidatura vegnan tramessas via HTTPS ad Attio, la
+> plattafurma CRM da True Wealth, ed ospitadas en il Reginavel Unì. Na vuls ti
+> betg duvrar questa applicaziun? Candidescha per e-mail a `jobs@truewealth.ch` —
+> ti n'has nagin dischavantatg da tscherner questa via.
+>
+> Tippa **«cuntinuar»** per prosequir cun tia candidatura.
 
 Next, tell the user that their information will be sent to True Wealth and that
 applications interrupted half-way will not be sent.
