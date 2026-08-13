@@ -38,6 +38,16 @@ Please read the Privacy & Data Handling section for details.
 > Keep our growth engine running while our Marketing Team Lead is on maternity
 > leave. Fixed term until end of May 2027, with a realistic option to go permanent.
 
+### [Product Owner (80–100%)](skills/true-wealth-hiring-product-owner/job_description.md)
+
+> Drive product initiatives from definition to release at a Swiss fintech —
+> reporting directly to the CEO.
+
+### [Senior Front-end Engineer (80–100%)](skills/true-wealth-hiring-senior-front-end-engineer/job_description.md)
+
+> Drive the front end of a Swiss fintech: the client dashboard, the onboarding flows and
+> the marketing website.
+
 ---
 
 ## How applying via Claude works
