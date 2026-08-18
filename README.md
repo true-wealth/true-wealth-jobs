@@ -49,6 +49,11 @@ Please read the Privacy & Data Handling section for details.
 > Drive the frontend of a Swiss fintech: the client dashboard, the onboarding flows and
 > the marketing website.
 
+### [Software Engineer / Senior Software Engineer](skills/true-wealth-hiring-software-engineer/job_description.md)
+
+> Full stack on the systems that run the business — trading engine to delightful
+> UIs. Open to strong engineers at any stage.
+
 ---
 
 ## How applying via Claude works
