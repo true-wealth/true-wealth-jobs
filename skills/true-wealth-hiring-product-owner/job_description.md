@@ -15,7 +15,7 @@ efficiently as possible.
 
 To meet the rising popularity of our investment solution, ensure the high quality
 of our product, and continue innovating the way wealth management is done, you
-will take ownership in this important Product Owner role. You will translate our
+will take on this important Product Owner role. You will translate our
 product strategy — owned by the CEO and the product leadership team — into
 well-defined, shipped product initiatives, closely interacting with your Product
 Owner peer, developers, UX/UI designers, marketing and management, as well as
@@ -34,6 +34,9 @@ external stakeholders. The role reports to the CEO.
   requirements — and push for solutions that provide an excellent user experience.
 - Guide sprint execution together with the product leadership team; maintain a
   high-quality product backlog together with the other PO and the engineers.
+- Work AI-first: use AI tools as everyday instruments — to explore ideas as
+  clickable prototypes, sharpen requirements, analyse usage and feedback, and
+  verify that what ships does what was intended, edge cases included.
 - Interact with institutional clients and partners to manage dependencies,
   change requests, and bug fixes.
 
@@ -49,6 +52,9 @@ external stakeholders. The role reports to the CEO.
   understanding in the team.
 - Ability to manage projects, keep timelines, and communicate with stakeholders.
 - High-agency spirit; hands-on, curious, and flexible mindset.
+- Openness in both directions: toward people — you genuinely listen to
+  stakeholders from clients to compliance — and toward technology, adopting new
+  tools like AI assistants quickly and critically.
 - Intrinsically motivated to get things right — from the initiative brief down to
   the fine details of a shipped feature.
 - Fluent in both English and German.
@@ -57,6 +63,8 @@ external stakeholders. The role reports to the CEO.
 - Prior experience in the fintech space.
 - General knowledge of asset management, the regulatory environment of wealth
   management, or occupational pensions (3a, FZG, 1e).
+- You have written code at some point — any language, any era — or read it
+  comfortably; valuable when steering AI-accelerated engineering work.
 
 ---
 
