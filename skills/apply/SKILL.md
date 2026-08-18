@@ -544,10 +544,20 @@ match.
   permission denial, follow the guidance in Step 7: suggest switching the
   permission mode and retry — never ask the candidate to run commands
   themselves, and never dump the collected data prematurely.
-- If `submit.sh` runs but exits non-zero, treat it as a submission failure: show
-  the collected fields as a JSON code block so the user can forward them
-  manually, and point them to `jobs@truewealth.ch` (they can attach their CV
-  there too).
+- If `submit.sh` runs but exits non-zero (and one retry doesn't help), switch to
+  the **email route** — the same route used when the session cannot run shell
+  commands at all (Step 7). Compose a **ready-to-send, human-readable email**
+  for the candidate:
+  - **To:** `jobs@truewealth.ch`
+  - **Subject:** `Application <position code> — <full name>`
+  - **Body:** the structured fields as a tidy list (position, name, email,
+    phone, address, work permit, availability and compensation if given,
+    LinkedIn if given), followed by the full approved application write-up.
+  No JSON, no code blocks — a recruiter must be able to read it as-is. Show it
+  in the chat for the candidate to copy into their own mail program; they attach
+  their CV themselves if they have one, and they send it. Offer to save the
+  email text as a file instead if they prefer (see Security and privacy). Then
+  close with the email-route confirmation from Step 8.
 - In case of any error, mention that they can apply via any conventional channel,
   e.g. by sending a CV and cover letter to `jobs@truewealth.ch`.
 
