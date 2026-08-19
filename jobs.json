@@ -1,0 +1,44 @@
+{
+  "$comment": "Machine-readable list of the currently open positions, consumed by the truewealth.ch/jobs build (see Jira B2C story). Maintenance rule: add an entry when a vacancy goes live, remove it when the role is filled - promptly, since stale postings hurt search ranking. Keep title/summary consistent with README.md and the vacancy's job_description.md. The description_html feeds the schema.org JobPosting markup and must match what the page visibly shows.",
+  "updated": "2026-08-18",
+  "apply_url": "https://github.com/true-wealth/true-wealth-jobs",
+  "hiring_organization": {
+    "name": "True Wealth AG",
+    "url": "https://www.truewealth.ch"
+  },
+  "jobs": [
+    {
+      "code": "VAC-04",
+      "title": "Digital Marketing Manager (interim, 80–100%)",
+      "employment_type": ["FULL_TIME", "PART_TIME", "TEMPORARY"],
+      "date_posted": "2026-07-31",
+      "workload": "80–100%",
+      "location": "Zürich Binz, hybrid",
+      "summary": "Keep our growth engine running while our Marketing Team Lead is on maternity leave. Fixed term until end of May 2027, with a realistic option to go permanent.",
+      "description_html": "<p>Keep our growth engine running while our Marketing Team Lead is on maternity leave. Own our digital marketing channels end-to-end: paid search &amp; paid social, SEO and content — with real budgets, clearly defined KPIs such as CLTV-based ROAS, and 50'000+ clients. Fixed term until 31 May 2027, with the option of a permanent contract afterwards. Reports to the CEO.</p><p><strong>Required:</strong> 5+ years of hands-on digital marketing experience, ideally in a premium B2C environment; proven ownership of paid channels and budgets; strong analytical skills (GA4 or similar); basic branding comprehension; fluent German and English; valid Swiss work permit.</p><p><strong>How to apply:</strong> conversationally via Claude Code (no terminal needed — see the instructions on this page) or by email to jobs@truewealth.ch.</p>",
+      "details_url": "https://github.com/true-wealth/true-wealth-jobs/blob/master/skills/true-wealth-hiring-digital-marketing-manager/job_description.md"
+    },
+    {
+      "code": "VAC-05",
+      "title": "Product Owner (80–100%)",
+      "employment_type": ["FULL_TIME", "PART_TIME"],
+      "date_posted": "2026-08-13",
+      "workload": "80–100%",
+      "location": "Zürich Binz, hybrid",
+      "summary": "Drive product initiatives from definition to release at a Swiss fintech — reporting directly to the CEO.",
+      "description_html": "<p>Drive product initiatives from definition to release at Switzerland's leading online wealth manager (50'000+ clients), reporting directly to the CEO. You translate our product strategy into well-defined, shipped product initiatives — working AI-first: exploring ideas as clickable prototypes, sharpening requirements, and verifying that what ships does what was intended.</p><p><strong>Required:</strong> experience as a Product Owner or similar in the digital space; strong business analysis and conceptual skills; a data-driven approach; high agency; openness toward people and technology; fluent English and German; valid Swiss work permit. Past coding experience is a plus.</p><p><strong>How to apply:</strong> conversationally via Claude Code (no terminal needed — see the instructions on this page) or by email to jobs@truewealth.ch.</p>",
+      "details_url": "https://github.com/true-wealth/true-wealth-jobs/blob/master/skills/true-wealth-hiring-product-owner/job_description.md"
+    },
+    {
+      "code": "VAC-07",
+      "title": "Senior Frontend Engineer (80–100%)",
+      "employment_type": ["FULL_TIME", "PART_TIME"],
+      "date_posted": "2026-08-13",
+      "workload": "80–100%",
+      "location": "Zürich Binz, hybrid",
+      "summary": "Drive the frontend of a Swiss fintech: the client dashboard, the onboarding flows and the marketing website.",
+      "description_html": "<p>Drive the frontend of a Swiss fintech: the client dashboard where 50'000+ people manage their wealth, the onboarding flows and the marketing website. Code ships every day, AI coding tools are part of the daily workflow, and you choose your own hardware.</p><p><strong>Required:</strong> strong engineering fundamentals; a track record of shipping real products; sharp technical judgment; fluency in English (German a plus); valid Swiss work permit.</p><p><strong>How to apply:</strong> conversationally via Claude Code (no terminal needed — see the instructions on this page) or by email to jobs@truewealth.ch.</p>",
+      "details_url": "https://github.com/true-wealth/true-wealth-jobs/blob/master/skills/true-wealth-hiring-senior-front-end-engineer/job_description.md"
+    }
+  ]
+}
