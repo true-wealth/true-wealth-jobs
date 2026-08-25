@@ -1,0 +1,32 @@
+name: Rebuild truewealth.ch/jobs
+
+# jobs.json is fetched at build time by truewealth.ch (see lib/jobs/jobsFeed.ts there), so a
+# change here only reaches the page once that site rebuilds. This triggers that rebuild
+# immediately whenever jobs.json changes, so a filled role stops advertising promptly.
+on:
+  push:
+    branches: [master]
+    paths:
+      - jobs.json
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+# Only one rebuild is ever useful at a time; a rapid add-then-remove in jobs.json should
+# collapse to a single deploy for whatever landed last, not queue redundant Vercel builds.
+concurrency:
+  group: rebuild-jobs-page
+  cancel-in-progress: true
+
+jobs:
+  trigger-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call the Vercel deploy hook for truewealth.ch
+        run: |
+          if [ -z "${{ secrets.TRUEWEALTH_CH_DEPLOY_HOOK_URL }}" ]; then
+            echo "::error::TRUEWEALTH_CH_DEPLOY_HOOK_URL secret is not set. Create a Deploy Hook for the truewealth-ch Vercel project (Settings > Git > Deploy Hooks, Production branch) and add its URL as a secret under that name."
+            exit 1
+          fi
+          curl -fsS --max-time 30 --retry 3 --retry-delay 5 -X POST "${{ secrets.TRUEWEALTH_CH_DEPLOY_HOOK_URL }}"
