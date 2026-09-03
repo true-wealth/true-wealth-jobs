@@ -1,6 +1,6 @@
 {
   "$comment": "Machine-readable list of the currently open positions, consumed by the truewealth.ch/jobs build (see Jira B2C story). Maintenance rule: add an entry when a vacancy goes live, remove it when the role is filled - promptly, since stale postings hurt search ranking. Keep title/summary consistent with README.md and the vacancy's job_description.md. The description_html feeds the schema.org JobPosting markup and must match what the page visibly shows.",
-  "updated": "2026-08-18",
+  "updated": "2026-09-03",
   "apply_url": "https://github.com/true-wealth/true-wealth-jobs",
   "hiring_organization": {
     "name": "True Wealth AG",
