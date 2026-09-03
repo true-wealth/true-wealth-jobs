@@ -56,7 +56,7 @@ external stakeholders. The role reports to the CEO.
 - Ability to manage projects, keep timelines, and communicate with stakeholders.
 - High-agency spirit; hands-on, curious, and flexible mindset.
 - Uncompromising standards for the digital customer experience — you notice when
-  something isn't top, you say so, and you make sure it gets fixed, even when
+  something isn't up to standard, you say so, and you make sure it gets fixed, even when
   it's someone else's initiative.
 - You don't just use AI yourself: you make our entire product innovation process
   AI-enabled — tooling, ways of working, and keeping the team current as the
