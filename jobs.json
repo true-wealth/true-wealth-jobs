@@ -1,6 +1,6 @@
 {
   "$comment": "Machine-readable list of the currently open positions, consumed by the truewealth.ch/jobs build (see Jira B2C story). Maintenance rule: add an entry when a vacancy goes live, remove it when the role is filled - promptly, since stale postings hurt search ranking. Keep title/summary consistent with README.md and the vacancy's job_description.md. The description_html feeds the schema.org JobPosting markup and must match what the page visibly shows.",
-  "updated": "2026-08-18",
+  "updated": "2026-09-03",
   "apply_url": "https://github.com/true-wealth/true-wealth-jobs",
   "hiring_organization": {
     "name": "True Wealth AG",
@@ -26,7 +26,7 @@
       "workload": "80–100%",
       "location": "Zürich Binz, hybrid",
       "summary": "Drive product initiatives from definition to release at a Swiss fintech — reporting directly to the CEO.",
-      "description_html": "<p>Drive product initiatives from definition to release at Switzerland's leading online wealth manager (50'000+ clients), reporting directly to the CEO. You translate our product strategy into well-defined, shipped product initiatives — working AI-first: exploring ideas as clickable prototypes, sharpening requirements, and verifying that what ships does what was intended.</p><p><strong>Required:</strong> experience as a Product Owner or similar in the digital space; strong business analysis and conceptual skills; a data-driven approach; high agency; openness toward people and technology; fluent English and German; valid Swiss work permit. Past coding experience is a plus.</p><p><strong>How to apply:</strong> conversationally via Claude Code (no terminal needed — see the instructions on this page) or by email to jobs@truewealth.ch.</p>",
+      "description_html": "<p>Drive product initiatives from definition to release at Switzerland's leading online wealth manager (50'000+ clients), reporting directly to the CEO. You translate our product strategy into well-defined, shipped product initiatives — working AI-first: exploring ideas as clickable prototypes, sharpening requirements, and verifying that what ships does what was intended. You also act as guardian of our customer-facing product experience: simple, intuitive, beautifully designed — across all initiatives.</p><p><strong>Required:</strong> experience as a Product Owner or similar in the digital space; strong business analysis and conceptual skills; a data-driven approach; high agency; uncompromising standards for the digital customer experience; the drive to make our entire product innovation process AI-enabled; openness toward people, from clients to compliance; fluent English and German; valid Swiss work permit. Past coding experience is a plus.</p><p><strong>How to apply:</strong> conversationally via Claude Code (no terminal needed — see the instructions on this page) or by email to jobs@truewealth.ch.</p>",
       "details_url": "https://github.com/true-wealth/true-wealth-jobs/blob/master/skills/true-wealth-hiring-product-owner/job_description.md"
     },
     {

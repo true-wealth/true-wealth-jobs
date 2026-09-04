@@ -30,6 +30,9 @@ external stakeholders. The role reports to the CEO.
   other PO, designers, engineers, compliance, and marketing colleagues.
 - Identify and understand customer needs and translate them into scalable and
   delightful product features; strive to continuously improve our offering.
+- Act as guardian of our customer-facing product experience: keep the app and
+  web platform simple, intuitive and beautifully designed across all product
+  initiatives — and hold other product owners and designers to that standard.
 - Analyse, define, and document business requirements — including regulatory
   requirements — and push for solutions that provide an excellent user experience.
 - Guide sprint execution together with the product leadership team; maintain a
@@ -52,9 +55,14 @@ external stakeholders. The role reports to the CEO.
   understanding in the team.
 - Ability to manage projects, keep timelines, and communicate with stakeholders.
 - High-agency spirit; hands-on, curious, and flexible mindset.
-- Openness in both directions: toward people — you genuinely listen to
-  stakeholders from clients to compliance — and toward technology, adopting new
-  tools like AI assistants quickly and critically.
+- Uncompromising standards for the digital customer experience — you notice when
+  something isn't up to standard, you say so, and you make sure it gets fixed, even when
+  it's someone else's initiative.
+- You don't just use AI yourself: you make our entire product innovation process
+  AI-enabled — tooling, ways of working, and keeping the team current as the
+  capabilities evolve.
+- Openness toward people — you genuinely listen to stakeholders from clients to
+  compliance.
 - Intrinsically motivated to get things right — from the initiative brief down to
   the fine details of a shipped feature.
 - Fluent in both English and German.
