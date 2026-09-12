@@ -75,6 +75,6 @@ values: [truewealth.ch/culture](https://www.truewealth.ch/culture).
 
 ## Ready to Apply?
 
-> **Please note:** you must hold a valid Swiss work permit to be eligible.
+> **Please note:** you must hold a valid Swiss work permit to be eligible (or be an EU/EFTA national willing to relocate to Zurich).
 
 Apply by following the instructions on the [jobs page](../../README.md#open-positions).

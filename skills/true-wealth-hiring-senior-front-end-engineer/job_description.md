@@ -79,7 +79,7 @@ someone who works fully autonomously.
 
 ## Ready to Apply?
 
-> **Please note:** you must hold a valid Swiss work permit to be eligible.
+> **Please note:** you must hold a valid Swiss work permit to be eligible (or be an EU/EFTA national willing to relocate to Zurich).
 
 If this sounds exciting, we'd love to hear from you. Apply by following the
 instructions on the [jobs page](../../README.md#open-positions).
