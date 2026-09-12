@@ -308,6 +308,11 @@ message, conversationally:
    "Switzerland" as a likely default, but let them answer freely).
 5. **Swiss work permit** — "Do you currently hold a valid Swiss work permit?
    (yes / no)". Accept only yes/no; re-ask politely otherwise. Store as boolean.
+   **If the answer is no, ask one follow-up:** "Are you a citizen of an EU or
+   EFTA country? (yes / no)". Accept only yes/no. Store as boolean
+   `eu_efta_national`; when the answer to the permit question was yes, do not
+   ask this and leave the field out. Do not comment on what either answer
+   means for the application — the recruiting team assesses eligibility.
 6. **Earliest availability** *(optional)* — convert to `YYYY-MM-DD` (first of the
    month if only a month is named) and confirm the converted date.
 7. **Desired compensation** *(optional)* — annual gross range in CHF, stored as
@@ -454,9 +459,9 @@ margin. If the PDF is too large, offer in order:
 ## Step 7 — Review and submit
 
 Show a compact summary of everything about to be sent (personal details, address,
-permit, availability and compensation if given, LinkedIn if given, whether a CV
-is attached, and a reminder that the approved write-up is included). Ask for a
-final confirmation.
+permit and, if asked, the EU/EFTA answer, availability and compensation if
+given, LinkedIn if given, whether a CV is attached, and a reminder that the
+approved write-up is included). Ask for a final confirmation.
 
 If this session has no way to run shell commands at all, the script is not an
 option: go straight to the email route in Error handling — there is nothing to
@@ -469,7 +474,8 @@ tool:
   `--phone` (normalized `+` format), `--swiss_work_permit` (literal `true` or
   `false`), `--address_street`, `--address_city`, `--address_postal_code`,
   `--address_country`, `--application_markdown`.
-- Optional flags (omit entirely when not provided): `--linkedin_url`,
+- Optional flags (omit entirely when not provided): `--eu_efta_national`
+  (literal `true` or `false`; only when the permit answer was no), `--linkedin_url`,
   `--earliest_availability` (YYYY-MM-DD), `--desired_comp_min_chf`,
   `--desired_comp_max_chf` (plain numbers), `--resume_pdf` (path — the script
   re-checks the size and does the base64 encoding itself).
@@ -551,8 +557,9 @@ match.
   - **To:** `jobs@truewealth.ch`
   - **Subject:** `Application <position code> — <full name>`
   - **Body:** the structured fields as a tidy list (position, name, email,
-    phone, address, work permit, availability and compensation if given,
-    LinkedIn if given), followed by the full approved application write-up.
+    phone, address, work permit and, if asked, EU/EFTA citizenship,
+    availability and compensation if given, LinkedIn if given), followed by
+    the full approved application write-up.
   No JSON, no code blocks — a recruiter must be able to read it as-is. Show it
   in the chat for the candidate to copy into their own mail program; they attach
   their CV themselves if they have one, and they send it. Offer to save the
