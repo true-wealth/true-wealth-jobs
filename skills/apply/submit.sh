@@ -27,6 +27,7 @@ email=""
 phone=""
 swiss_work_permit=""
 eu_efta_national=""
+willing_to_relocate=""
 linkedin_url=""
 address_street=""
 address_city=""
@@ -53,6 +54,7 @@ while [ $# -gt 0 ]; do
         --phone)                 phone=$2;                 shift 2 ;;
         --swiss_work_permit)     swiss_work_permit=$2;     shift 2 ;;
         --eu_efta_national)      eu_efta_national=$2;      shift 2 ;;
+        --willing_to_relocate)   willing_to_relocate=$2;   shift 2 ;;
         --linkedin_url)          linkedin_url=$2;          shift 2 ;;
         --address_street)        address_street=$2;        shift 2 ;;
         --address_city)          address_city=$2;          shift 2 ;;
@@ -122,6 +124,12 @@ if [ -n "$eu_efta_national" ]; then
         *) die "--eu_efta_national must be 'true' or 'false' when given (got: $eu_efta_national)" ;;
     esac
 fi
+if [ -n "$willing_to_relocate" ]; then
+    case "$willing_to_relocate" in
+        true|false) ;;
+        *) die "--willing_to_relocate must be 'true' or 'false' when given (got: $willing_to_relocate)" ;;
+    esac
+fi
 
 if [ -n "$earliest_availability" ]; then
     case "$earliest_availability" in
@@ -180,6 +188,7 @@ add_str email "$email"
 add_str phone "$phone"
 add_raw swiss_work_permit "$swiss_work_permit"
 if [ -n "$eu_efta_national" ]; then add_raw eu_efta_national "$eu_efta_national"; fi
+if [ -n "$willing_to_relocate" ]; then add_raw willing_to_relocate "$willing_to_relocate"; fi
 if [ -n "$linkedin_url" ]; then add_str linkedin_url "$linkedin_url"; fi
 add_str position_code_applying_for "$position_code"
 add_str address_street "$address_street"

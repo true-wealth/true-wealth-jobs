@@ -306,6 +306,12 @@ message, conversationally:
      the application would fail to process.
 4. **Postal address** — street + number, postal code and city, country (suggest
    "Switzerland" as a likely default, but let them answer freely).
+   **If the country is not Switzerland or Liechtenstein, ask one follow-up:**
+   "Our roles are on-site in Zurich. Would you be willing to relocate to the
+   Zurich area? (yes / no)". Accept only yes/no; re-ask politely otherwise.
+   Store as boolean `willing_to_relocate`; for a Swiss or Liechtenstein address
+   do not ask and leave the field out. Do not comment on what the answer means
+   for the application — the recruiting team assesses it.
 5. **Swiss work permit** — "Do you currently hold a valid Swiss work permit?
    (yes / no)". Accept only yes/no; re-ask politely otherwise. Store as boolean.
    **If the answer is no, ask one follow-up:** "Are you a citizen of an EU or
@@ -475,7 +481,9 @@ tool:
   `false`), `--address_street`, `--address_city`, `--address_postal_code`,
   `--address_country`, `--application_markdown`.
 - Optional flags (omit entirely when not provided): `--eu_efta_national`
-  (literal `true` or `false`; only when the permit answer was no), `--linkedin_url`,
+  (literal `true` or `false`; only when the permit answer was no),
+  `--willing_to_relocate` (literal `true` or `false`; only when the address is
+  outside Switzerland or Liechtenstein), `--linkedin_url`,
   `--earliest_availability` (YYYY-MM-DD), `--desired_comp_min_chf`,
   `--desired_comp_max_chf` (plain numbers), `--resume_pdf` (path — the script
   re-checks the size and does the base64 encoding itself).
