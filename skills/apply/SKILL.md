@@ -465,8 +465,8 @@ margin. If the PDF is too large, offer in order:
 ## Step 7 — Review and submit
 
 Show a compact summary of everything about to be sent (personal details, address,
-permit and, if asked, the EU/EFTA answer, availability and compensation if
-given, LinkedIn if given, whether a CV is attached, and a reminder that the
+permit and, if asked, the EU/EFTA answer and the relocation answer,
+availability and compensation if given, LinkedIn if given, whether a CV is attached, and a reminder that the
 approved write-up is included). Ask for a final confirmation.
 
 If this session has no way to run shell commands at all, the script is not an
@@ -565,8 +565,9 @@ match.
   - **To:** `jobs@truewealth.ch`
   - **Subject:** `Application <position code> — <full name>`
   - **Body:** the structured fields as a tidy list (position, name, email,
-    phone, address, work permit and, if asked, EU/EFTA citizenship,
-    availability and compensation if given, LinkedIn if given), followed by
+    phone, address, work permit and, if asked, EU/EFTA citizenship and
+    willingness to relocate to Zurich, availability and compensation if given,
+    LinkedIn if given), followed by
     the full approved application write-up.
   No JSON, no code blocks — a recruiter must be able to read it as-is. Show it
   in the chat for the candidate to copy into their own mail program; they attach
