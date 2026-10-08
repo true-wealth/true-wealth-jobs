@@ -1,23 +1,12 @@
 {
   "$comment": "Machine-readable list of the currently open positions, consumed by the truewealth.ch/jobs build (see Jira B2C story). Maintenance rule: add an entry when a vacancy goes live, remove it when the role is filled - promptly, since stale postings hurt search ranking. Keep title/summary consistent with README.md and the vacancy's job_description.md. The description_html feeds the schema.org JobPosting markup and must match what the page visibly shows.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-08",
   "apply_url": "https://github.com/true-wealth/true-wealth-jobs",
   "hiring_organization": {
     "name": "True Wealth AG",
     "url": "https://www.truewealth.ch"
   },
   "jobs": [
-    {
-      "code": "VAC-04",
-      "title": "Digital Marketing Manager (interim, 80–100%)",
-      "employment_type": ["FULL_TIME", "PART_TIME", "TEMPORARY"],
-      "date_posted": "2026-07-31",
-      "workload": "80–100%",
-      "location": "Zürich Binz, hybrid",
-      "summary": "Keep our growth engine running while our Marketing Team Lead is on maternity leave. Fixed term until end of May 2027, with a realistic option to go permanent.",
-      "description_html": "<p>Keep our growth engine running while our Marketing Team Lead is on maternity leave. Own our digital marketing channels end-to-end: paid search &amp; paid social, SEO and content — with real budgets, clearly defined KPIs such as CLTV-based ROAS, and 50'000+ clients. Fixed term until 31 May 2027, with the option of a permanent contract afterwards. Reports to the CEO.</p><p><strong>Required:</strong> 5+ years of hands-on digital marketing experience, ideally in a premium B2C environment; proven ownership of paid channels and budgets; strong analytical skills (GA4 or similar); basic branding comprehension; fluent German and English; valid Swiss work permit (or EU/EFTA nationality with willingness to relocate to Zurich).</p><p><strong>How to apply:</strong> conversationally via Claude Code (no terminal needed — see the instructions on this page) or by email to jobs@truewealth.ch.</p>",
-      "details_url": "https://github.com/true-wealth/true-wealth-jobs/blob/master/skills/true-wealth-hiring-digital-marketing-manager/job_description.md"
-    },
     {
       "code": "VAC-07",
       "title": "Senior Frontend Engineer (80–100%)",
