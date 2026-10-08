@@ -34,11 +34,6 @@ Please read the Privacy & Data Handling section for details.
 
 ## Open positions
 
-### [Digital Marketing Manager (interim, 80–100%)](skills/true-wealth-hiring-digital-marketing-manager/job_description.md)
-
-> Keep our growth engine running while our Marketing Team Lead is on maternity
-> leave. Fixed term until end of May 2027, with a realistic option to go permanent.
-
 ### [Senior Frontend Engineer (80–100%)](skills/true-wealth-hiring-senior-front-end-engineer/job_description.md)
 
 > Drive the frontend of a Swiss fintech: the client dashboard, the onboarding flows and
@@ -72,7 +67,7 @@ terminal or know git: Claude handles that part for you.
 > ```bash
 > git clone https://github.com/true-wealth/true-wealth-jobs
 > cd true-wealth-jobs
-> claude "I want to apply for the Digital Marketing Manager role at True Wealth"
+> claude "I want to apply for the Senior Frontend Engineer role at True Wealth"
 > ```
 
 Either way, Claude collects the necessary information conversationally and then
