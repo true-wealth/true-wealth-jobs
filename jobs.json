@@ -1,6 +1,6 @@
 {
   "$comment": "Machine-readable list of the currently open positions, consumed by the truewealth.ch/jobs build (see Jira B2C story). Maintenance rule: add an entry when a vacancy goes live, remove it when the role is filled - promptly, since stale postings hurt search ranking. Keep title/summary consistent with README.md and the vacancy's job_description.md. The description_html feeds the schema.org JobPosting markup and must match what the page visibly shows.",
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "apply_url": "https://github.com/true-wealth/true-wealth-jobs",
   "hiring_organization": {
     "name": "True Wealth AG",
@@ -17,6 +17,17 @@
       "summary": "Drive the frontend of a Swiss fintech: the client dashboard, the onboarding flows and the marketing website.",
       "description_html": "<p>Drive the frontend of a Swiss fintech: the client dashboard where 50'000+ people manage their wealth, the onboarding flows and the marketing website. Code ships every day, AI coding tools are part of the daily workflow, and you choose your own hardware.</p><p><strong>Required:</strong> strong engineering fundamentals; a track record of shipping real products; sharp technical judgment; fluency in English (German a plus); valid Swiss work permit (or EU/EFTA nationality with willingness to relocate to Zurich).</p><p><strong>How to apply:</strong> conversationally via Claude Code (no terminal needed — see the instructions on this page) or by email to jobs@truewealth.ch.</p>",
       "details_url": "https://github.com/true-wealth/true-wealth-jobs/blob/master/skills/true-wealth-hiring-senior-front-end-engineer/job_description.md"
+    },
+    {
+      "code": "VAC-09",
+      "title": "Tax & Financial-Planning Expert (100% or fractional)",
+      "employment_type": ["FULL_TIME", "PART_TIME", "CONTRACTOR"],
+      "date_posted": "2026-10-09",
+      "workload": "100% or fractional",
+      "location": "Zürich Binz, hybrid",
+      "summary": "Own the quality of the advice in our new digital financial- and retirement-planning service: define what sound advice is, validate it, and stand behind it. Reports to the CEO.",
+      "description_html": "<p>True Wealth (CHF 3.4bn under management, 50'000 clients, FINMA-licensed asset manager) is building a digital financial- and retirement-planning service inside its app. You are the authority on whether a financial plan is right: you author the validated reference cases that set the standard, curate the tax and pension knowledge base across all 26 cantons, quality-assure the plans the service produces, own the plain-language rationale behind every recommendation, and validate the cantonal tax logic. Reports to the CEO. Full-time or a fractional/advisory arrangement.</p><p><strong>Required:</strong> eidg. dipl. Steuerexperte/-expertin (or at minimum Treuhänder/-in mit eidg. Fachausweis) and Experte/Expertin in Finanz- und Vorsorgeplanung mit eidg. Diplom (or at minimum Finanzplaner/-in mit eidg. Fachausweis); experience as the tax reference (second- or third-level support) in a financial-planning or private-banking function; rigour in turning judgement into explicit, testable rules; fluent German and English (Swiss German a plus); valid Swiss work permit (or EU/EFTA nationality with willingness to relocate to Zurich).</p><p><strong>How to apply:</strong> conversationally via Claude Code (no terminal needed — see the instructions on this page) or by email to jobs@truewealth.ch.</p>",
+      "details_url": "https://github.com/true-wealth/true-wealth-jobs/blob/master/skills/true-wealth-hiring-tax-financial-planning-expert/job_description.md"
     }
   ]
 }
