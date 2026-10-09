@@ -39,6 +39,11 @@ Please read the Privacy & Data Handling section for details.
 > Drive the frontend of a Swiss fintech: the client dashboard, the onboarding flows and
 > the marketing website.
 
+### [Tax & Financial-Planning Expert (100% or fractional)](skills/true-wealth-hiring-tax-financial-planning-expert/job_description.md)
+
+> Own the quality of the advice in our new digital financial- and retirement-planning
+> service: define what sound advice is, validate it, and stand behind it. Reports to the CEO.
+
 ---
 
 ## How applying via Claude works
