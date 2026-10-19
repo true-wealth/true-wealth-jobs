@@ -34,11 +34,6 @@ Please read the Privacy & Data Handling section for details.
 
 ## Open positions
 
-### [Senior Frontend Engineer (80–100%)](skills/true-wealth-hiring-senior-front-end-engineer/job_description.md)
-
-> Drive the frontend of a Swiss fintech: the client dashboard, the onboarding flows and
-> the marketing website.
-
 ### [Tax & Financial-Planning Expert (100% or fractional)](skills/true-wealth-hiring-tax-financial-planning-expert/job_description.md)
 
 > Own the quality of the advice in our new digital financial- and retirement-planning
@@ -72,7 +67,7 @@ terminal or know git: Claude handles that part for you.
 > ```bash
 > git clone https://github.com/true-wealth/true-wealth-jobs
 > cd true-wealth-jobs
-> claude "I want to apply for the Senior Frontend Engineer role at True Wealth"
+> claude "I want to apply for the Tax & Financial-Planning Expert role at True Wealth"
 > ```
 
 Either way, Claude collects the necessary information conversationally and then
