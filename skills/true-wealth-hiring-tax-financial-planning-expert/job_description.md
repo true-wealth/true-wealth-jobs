@@ -56,11 +56,14 @@ and financial data the service relies on.
 You combine two distinct lines of Swiss professional authority.
 
 **Required**
-- **Tax:** *eidg. dipl. Steuerexperte/-expertin* — or, at minimum, *Treuhänder/-in
-  mit eidg. Fachausweis*.
-- **Financial & pension planning:** *Experte/Expertin in Finanz- und
-  Vorsorgeplanung mit eidg. Diplom* (höhere Fachprüfung) — or, at minimum,
-  *Finanzplaner/-in mit eidg. Fachausweis*.
+- **One of the two federal credentials, plus proven on-the-job practice in the
+  other line.** On the tax side: *eidg. dipl. Steuerexperte/-expertin* — or, at
+  minimum, *Treuhänder/-in mit eidg. Fachausweis*. On the planning side:
+  *Experte/Expertin in Finanz- und Vorsorgeplanung mit eidg. Diplom* (höhere
+  Fachprüfung) — or, at minimum, *Finanzplaner/-in mit eidg. Fachausweis*. A
+  planner with the planning credential who has handled the tax questions of
+  their clients for years qualifies, as does a tax expert who has built and
+  reviewed financial and pension plans.
 - Experience as **the tax reference — second- or third-level support — inside a
   financial-planning or private-banking function**: the person colleagues
   escalate the hard cases to.
